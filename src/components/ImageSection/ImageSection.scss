@@ -1,0 +1,69 @@
+@import "../../main";
+
+.imageSection {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  .hover-project {
+    .h2-hover-project {
+      font-weight: $bold;
+      margin: 0;
+      text-align: center;
+    }
+    .p-hover-project {
+      font-weight: $bold;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 450px;
+    height: auto;
+    padding: 50px 0 50px 100px;
+    box-sizing: border-box;
+  }
+
+  .image-project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    img {
+      height: 300px;
+      width: auto;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .imageSection {
+    width: 100%;
+    .image-project {
+      height: auto;
+      width: 100%;
+      margin: 0;
+      img {
+        height: auto;
+        width: 100%;
+      }
+      .hover-project {
+        display: none;
+      }
+    }
+  }
+}

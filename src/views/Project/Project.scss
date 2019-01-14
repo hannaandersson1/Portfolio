@@ -1,0 +1,263 @@
+@import "../../main";
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .intro-section {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 100px 0;
+
+    .intro-section-left {
+      box-sizing: border-box;
+      padding: 0 70px;
+      width: 70%;
+      @media screen and (max-width: 880px) {
+        padding: 40px 40px 40px 0;
+      }
+      @media screen and (max-width: 760px) {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        .h1-project {
+          font-size: 22px;
+        }
+        .h2-project {
+          font-size: 16px;
+        }
+      }
+    }
+    .intro-section-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 30%;
+      padding: 0 40px;
+      border-left: 1px solid $dark-grey;
+      @media screen and (max-width: 880px) {
+        padding: 40px;
+      }
+      @media screen and (max-width: 760px) {
+        border-left: none;
+        border-top: 1px solid $dark-grey;
+        width: 70%;
+        padding: 50px 0;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 760px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  .processen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    background-color: #efefef;
+    .process {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 0 100px 0;
+      .process-step {
+        margin: 25px;
+        width: 150px;
+        height: auto;
+        text-align: center;
+      }
+      @media screen and (max-width: 760px) {
+        margin: 20px 0 40px 0;
+      }
+    }
+  }
+  .process-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+
+    .process-box-self {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px 0 40px 70px;
+      @media screen and (max-width: 880px) {
+        padding: 40px 0 20px 0;
+      }
+      @media screen and (max-width: 760px) {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+    .process-box {
+      display: flex;
+      flex-wrap: wrap;
+      .process-section-large {
+        width: 70%;
+        box-sizing: border-box;
+        padding: 40px 40px 40px 70px;
+        @media screen and (max-width: 880px) {
+          padding: 20px 0 20px 20px;
+        }
+        @media screen and (max-width: 760px) {
+          padding: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .process-section-small {
+        width: 30%;
+        box-sizing: border-box;
+        padding: 40px 0 40px 70px;
+
+        @media screen and (max-width: 880px) {
+          padding: 20px 0;
+        }
+        @media screen and (max-width: 760px) {
+          padding-top: 40px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        flex-direction: column;
+      }
+    }
+    .quote-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      .quote-box {
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px 25px;
+        text-align: center;
+      }
+    }
+
+    .image-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding: 0 15px;
+        margin-top: 30px;
+
+        //QueueU
+        &#cardSorting1 {
+          height: 450px;
+        }
+        &#cardSorting2 {
+          height: 450px;
+        }
+        &#wireframesQu {
+          width: 75vw;
+        }
+        &#gift-animation {
+          height: 500px;
+        }
+        &#code-animation {
+          height: 500px;
+        }
+        &#microcopyQu {
+          width: 500px;
+          @media screen and (max-width: 760px) {
+            width: 300px;
+          }
+        }
+        &#microcopy2Qu {
+          width: 500px;
+          @media screen and (max-width: 760px) {
+            width: 300px;
+          }
+        }
+        &#hosting {
+          height: 500px;
+        }
+        &#joining {
+          height: 500px;
+        }
+
+        //Accurate Player
+        &#storymapAp {
+          height: 250px;
+          @media screen and (max-width: 760px) {
+            width: 280px;
+            height: auto;
+          }
+        }
+        &#jurneymapAp {
+          height: 250px;
+          @media screen and (max-width: 760px) {
+            width: 280px;
+            height: auto;
+          }
+        }
+        &#loFIAp1 {
+          width: 600px;
+          @media screen and (max-width: 760px) {
+            width: 280px;
+            height: auto;
+          }
+        }
+        &#loFiAp2 {
+          width: 600px;
+          @media screen and (max-width: 760px) {
+            width: 280px;
+            height: auto;
+          }
+        }
+        &#APWireframes {
+          width: 70vw;
+          filter: drop-shadow(0px 0px 1px $dark-grey);
+        }
+        //Mash
+        &#mashResult1 {
+          height: 450px;
+        }
+        &#mashResult2 {
+          height: 450px;
+        }
+        &#mashResult3 {
+          height: 450px;
+        }
+        &#mashResult4 {
+          height: 450px;
+        }
+      }
+    }
+  }
+  #btn-toggle-process {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    margin-top: 100px;
+    cursor: pointer;
+    font-weight: $bold;
+
+    @media screen and (max-width: 760px) {
+      margin: 80px 0 40px 0;
+    }
+  }
+}

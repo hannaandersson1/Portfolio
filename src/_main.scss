@@ -1,0 +1,129 @@
+// Colors
+$base-color-text: #ff4c68;
+$base-color-qu: #fd668a;
+$base-color-ap: #6b80bb;
+$base-color-hiki: #88c641;
+$base-color-mash: #f9b002;
+
+// Color gray-scale
+$white-transparent: rgba(255, 255, 255, 0.9);
+$white: #ffff;
+
+$lightest-grey: #f4f4f4;
+$dark-grey: #5f5c5c;
+$black: #000000;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Font size
+$font-size-xxlarge: 80px;
+$font-size-xlarge: 40px;
+$font-size-large: 30px;
+$font-size-slarge: 22px;
+$font-size-sslarge: 18px;
+$font-size-regular: 16px;
+
+// Font family
+$font-heading: "Open Sans", sans-serif;
+$font-regular: "Raleway", sans-serif;
+$font-cover-heading: "Fjalla One", sans-serif;
+
+h1 {
+  font-family: $font-heading;
+  font-size: $font-size-large;
+  font-weight: $bold;
+}
+
+h2 {
+  font-family: $font-heading;
+  font-weight: $bold;
+  font-size: $font-size-slarge;
+}
+
+.h1-project {
+  color: $black;
+  font-family: $font-heading;
+  font-size: $font-size-large;
+  font-weight: $bold;
+  margin: 0;
+}
+
+.h2-project {
+  color: $black;
+  font-size: $font-size-slarge;
+  margin: 5px 0 30px 0;
+}
+
+p {
+  font-family: $font-regular;
+  font-weight: $regular;
+  font-size: $font-size-regular;
+}
+.p-project {
+  font-family: $font-regular;
+  font-weight: $regular;
+  font-size: $font-size-regular;
+  margin: 5px 0 30px 0;
+}
+
+.p-bold {
+  font-family: $font-regular;
+  font-weight: $bold;
+  font-size: $font-size-regular;
+  margin: 0;
+}
+
+.line-left {
+  border-left: 1px solid $dark-grey;
+  width: 100px;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  font-family: $font-regular;
+  font-weight: $regular;
+}
+.quote {
+  font-style: italic;
+  font-weight: $regular;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid $base-color-text;
+  font-family: $font-regular;
+  font-weight: $bold;
+  font-size: $font-size-regular;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 40px 0;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-show-process {
+  background-color: $base-color-text;
+  border: none;
+  color: $white;
+}
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;

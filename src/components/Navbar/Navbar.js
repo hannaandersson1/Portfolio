@@ -1,30 +1,26 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
-class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <nav className="Navigation">
-        <ul>
-          <li>
-            <Link to="/">WORK</Link>
-          </li>
-          <li>
-            <Link to="/About">ME</Link>
-          </li>
-          <li>
-            <Link to="/Resume">RESUME</Link>
-          </li>
-        </ul>
-      </nav>
-    );
-  }
-}
+const Navbar = () => {
+  return (
+    <nav className="navigation">
+      <NavLink className="p-navigation" exact to="/">
+        HANNA ANDERSSON
+      </NavLink>
+      <div className="link-container">
+        <NavLink exact className="nav-link" to="/">
+          WORK
+        </NavLink>
+        <NavLink className="nav-link" to="/About">
+          ME
+        </NavLink>
+        <NavLink className="nav-link" to="/Resume">
+          RESUME
+        </NavLink>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

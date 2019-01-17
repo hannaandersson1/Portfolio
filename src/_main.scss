@@ -92,26 +92,26 @@ a {
   font-weight: $regular;
 }
 
-button {
-  width: 150px;
-  height: 50px;
+.say-hello-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: white;
+  outline: none;
+  background-color: #000834;
+  width: 140px;
+  height: 40px;
   border-radius: 25px;
-  border: 1px solid $base-color-text;
+  border: 2px solid #fb5b8d;
   font-family: $font-regular;
   font-weight: $bold;
   font-size: $font-size-regular;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin: 40px 0;
   &:hover {
     transform: scale(1.1);
   }
-}
-
-.btn-show-process {
-  background-color: $base-color-text;
-  border: none;
-  color: $white;
 }
 
 // Base Font

@@ -37,17 +37,17 @@ class Project extends Component {
       <div className="project">
         <ProjectCover color={content.cover.color} img={content.cover.img} />
         {content.intro}
-        <div
-          className="processen"
-          style={{ backgroundColor: content.subColor }}
-        >
-          <h2>Process</h2>
-          <div className="process">
-            {content.processes.map((element, index) => {
-              return <Process key={index} steps={element.steps} />;
-            })}
+        {content.process && (
+          <div className="processen">
+            <h2>Process</h2>
+            <div className="process">
+              {content.processes.map((element, index) => {
+                return <Process key={index} steps={element.steps} />;
+              })}
+            </div>
           </div>
-        </div>
+        )}
+
         {this.state.visibility && content.text}
         {content.processInfo && (
           <Link
@@ -55,7 +55,6 @@ class Project extends Component {
             smooth={true}
             duration={500}
             to="btn-toggle-process"
-            style={{ backgroundColor: content.cover.color }}
             onClick={this.toggleVisibility}
           >
             {(!this.state.visibility ? "Show" : "Hide") + " process"}

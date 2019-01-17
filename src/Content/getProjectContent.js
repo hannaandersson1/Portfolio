@@ -2,9 +2,9 @@ import React from "react";
 
 export const getCoverContent = id => {
   const accuratePlayer = {
-    cover: { color: "#6b80bb", img: "/images/aP.svg" },
-    subColor: "#F6F8FF",
+    cover: { color: "#6b80bb", img: "/images/apDator.png" },
     processInfo: true,
+    process: true,
     processes: [
       {
         steps: {
@@ -59,8 +59,8 @@ export const getCoverContent = id => {
             <br />
             <br /> My role was to work with UX Design and front end development.
             From this project, I brought with me how to work according to an
-            agile project method, and how to work in a big project were everyone
-            had their own importent role.
+            agile project method, and how to work in a big project where
+            everyone had their own importent role.
           </p>
         </div>
         <div className="intro-section-right line-left">
@@ -224,9 +224,9 @@ export const getCoverContent = id => {
   };
 
   const exchangeSate = {
-    cover: { color: "#6b80bb", img: "/images/aP.svg" },
-    subColor: "#F6F8FF",
+    cover: { color: "#6b80bb", img: "/images/exchange.png" },
     processInfo: true,
+    process: true,
     processes: [
       {
         steps: {
@@ -237,12 +237,7 @@ export const getCoverContent = id => {
       {
         steps: {
           processHead: "Design & Test I",
-          list: [
-            "Structure information",
-            "Workshop",
-            "Wireframes",
-            "User Test I"
-          ]
+          list: ["Workshop", "Wireframes", "User Test I"]
         }
       },
       {
@@ -270,17 +265,17 @@ export const getCoverContent = id => {
           <h1 className="h1-project">Website for exchange studies</h1>
           <h2 className="h2-project">Sep 2018 - Dec 2018 | Umeå, Sweden</h2>
           <p>
-            During the autumn semester 2018, me and two other students were
-            assigned to build a website for exchange studies. The aim was to,
-            through the website, encourage students of M.Sc in Interaction
-            Technology and Design to study abroad, and to help out with the
-            preparation work before the trip. <br />
+            During the autumn term 2018, me and two other students were assigned
+            to build a website for exchange studies. The aim was to, through the
+            website, encourage students of M.Sc in Interaction Technology and
+            Design to study abroad, and to help out with the preparation work
+            before the trip. <br />
             <br /> My role was to work with the whole process from idea to
             finished result. This included research, design, prototype, test and
             development. <br />
             <br /> From this, I brought with me how to plan and structure a
-            limited project, I got the oppurtunity to use my skills to tackle a
-            problem based on what the user want and needs, and I especially
+            limited project, I got the opportunity to use my skills to tackle a
+            problem based on what the user wants and needs, and I especially
             developed my programming skills in React.
           </p>
         </div>
@@ -296,13 +291,291 @@ export const getCoverContent = id => {
         </div>
       </div>
     ),
-    text: <div>hej</div>
+    text: (
+      <div className="process-section">
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Research</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              First, we needed to target our users and the problems and needs of
+              the users. We wanted as much information as possible, hence we
+              posted a survey in a facebook group with our target group. We also
+              did In-depth interviews to get qualitative data. We interviewed
+              both student that already have been abroad and students that are
+              about to go abroad. We also interviewed personnel at Umeå the
+              university that is responsible for exchange studies to better
+              understanding every part of the process before and after the trip.
+              <br />
+              <br />
+              From this, we got a good insight into what the users wanted the
+              website to contain and we were able to structure the website
+              according to all gathered information.
+            </p>
+          </div>
+        </div>
+        <div className="image-section">
+          <img id="postit1" src="/images/postit1.png" alt="postit1" />
+          <img id="postit2" src="/images/postit2.png" alt="postit2" />
+          <img id="postit3" src="/images/postit3.png" alt="postit3" />
+          <img id="postit4" src="/images/postit4.png" alt="postit4" />
+          <img id="postit5" src="/images/postit5.png" alt="postit5" />
+          <img id="postit6" src="/images/postit6.png" alt="postit6" />
+        </div>
+        <p>The structure of the website</p>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Design & Test I</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              We created a workshop where we together generated ideas of how we
+              wanted the website to look like. We based our ideas on citations
+              from the users and a mood board that we created. Later on, we
+              started to create simple wireframes to be able to perform user
+              tests. This gave us an early insight on what the users thought
+              about the website.
+            </p>
+          </div>
+        </div>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Design & Test II</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              In this phase, we focused on the graphical design. As the main
+              idea was that the website would be inspiring we agreed on a
+              colorful design with a lot of inspiring images. <br />
+              <br />
+              We played with many different colors and shapes and receive
+              feedback from users before we could agree on one design to
+              continue to work with.
+            </p>
+          </div>
+        </div>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>My experience</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              From this, I brought with me how to plan and structure a limited
+              project, I got the opportunity to use my skills to tackle a
+              problem based on what the user wants and needs, and I especially
+              developed my programming skills in React.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  };
+
+  const hikikomori = {
+    cover: { color: "#f9b002", img: "/images/hikikomori.png" },
+    processInfo: false,
+    process: false,
+    processes: [
+      {
+        steps: {
+          processHead: "Research",
+          list: ["Brainstorming", "Survey", "In-depth interviews"]
+        }
+      },
+      {
+        steps: {
+          processHead: "Design & Test I",
+          list: ["Workshop", "Wireframes", "User Test I"]
+        }
+      },
+      {
+        steps: {
+          processHead: "Design & Test II",
+          list: ["Graphic design", "Hi-Fi Prototype", "User Test II"]
+        }
+      },
+      {
+        steps: {
+          processHead: "Implement",
+          list: ["programming", "Receive feedback", "Iterate"]
+        }
+      },
+      {
+        steps: {
+          processHead: "Deliver",
+          list: ["Presentation", "Documentation"]
+        }
+      }
+    ],
+    intro: (
+      <div className="intro-section">
+        <div className="intro-section-left">
+          <h1 className="h1-project">Hikikomori - Calendar application</h1>
+          <h2 className="h2-project">Nov 2016 - Dec 2016 | Umeå, Sweden</h2>
+          <p>
+            Hikikomori is an organization that helps adolescents that is
+            isolated in their homes to get back to society. <br />
+            <br /> During a school project, me and three other students came up
+            with an idea of ​​a smart bracelet connected to a calendar
+            application. The calender would have sent personal notifications and
+            motivating messages to the users and aimed to help the adolescents
+            get structure in their daily life and to gain self-esteem. During
+            the project we had Madeleine Blusi, PhD in eHealth as a metor and
+            got a lot of interesting insigt in how we could work with design to
+            evoke desirable emotions. <br />
+            <br /> My role was to work with UX/UI design.
+          </p>
+        </div>
+        <div className="intro-section-right line-left">
+          <p className="p-bold">Context</p>
+          <p className="p-project">School project </p>
+          <p className="p-bold">Client</p>
+          <p className="p-project">Hikikomori</p>
+          <p className="p-bold">Role</p>
+          <p className="p-project">UX/UI Designer</p>
+          <p className="p-bold">Tools/Technology</p>
+          <p className="p-project">Sketch, Illustrator, Principle</p>
+        </div>
+      </div>
+    ),
+    text: (
+      <div className="process-section">
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Challenge</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              Hikikomori is an orginization located in Umeå working with 20
+              youths simultaneously. In the beginning the Hikikomori personal
+              have single meetings and further on they integrate the youths in
+              larger group activities. The activities occur the same time every
+              week and consists of gaming-/playing-, physical- and outing
+              events. The meaning with these events is to work with the
+              adolescents social behaviour and to give them a “feel good”
+              feeling.
+              <br />
+              <br />
+              The aim of the project was to provide a service that benefit both
+              the Hikikomori organization and the adolescents. They wanted a
+              solution with the perspective of interactivity in smart
+              environments, were these problems were considered.
+              <br />
+              <br />- How can participation be increased?
+              <br />- How can the answer frequency for the activities be
+              improved?
+              <br /> - How can the adolescents be assisted in getting back to
+              healthy daily routines?
+              <br />- Is there ways of motivating the participants into leaving
+              their house?
+            </p>
+          </div>
+        </div>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Team/My role</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              My main task was to create the interface and wireframes in the
+              design toolkit Sketch. I also was in charge of demostrating the
+              product on a conferense at Umeå university.
+              <br />
+              <br />
+              The team consisted of me, three other students and Madeleine
+              Blusi, PhD in eHealth that help us understand our users as we were
+              no able to carry out any user tests.
+            </p>
+          </div>
+        </div>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Target group</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              Hikikomori is working with young adults between 16-25 years. The
+              adolescents are separated by all social means. They are not
+              working or studying, they get funded by their families and they do
+              not hang out with any friends. All of them experience one or many
+              problems, such as social phobia, depression, motivation and
+              difficulty with routines including sleeping and eating. This might
+              be the result from bullying, diagnosis (ADD, aspergers, OCD etc.)
+            </p>
+          </div>
+        </div>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>Result</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              The project resulted in a prototype that could illustrate how the
+              product could be used in the real world.The images showes the
+              final UI result. As they wanted a solution with the perspective of
+              interactivity in smart environments an idea of a system connected
+              to a bracelet that will collect information from three different
+              sources was presented. The sources are: <br />
+              <br /> - Pulse sensor: To determine the stress level on the
+              activity.
+              <br />- GPS: To keep track of how many persons attended the
+              activity.
+              <br />- Activity rating system: To get a subjective view from the
+              adolescents.
+              <br />
+              <br />
+              The system will triangulate with the help from these three sources
+              and for each activity determine the “feel good” factor the person
+              experienced. By supervised learning, in an artificial neural
+              network, the system will finally learn the preferences of each
+              individual, if the person likes specific activities, different
+              amount of persons at the event etc. The system will then be able
+              to motivate the adolescents to attend events with individually
+              motivating invites.
+            </p>
+          </div>
+        </div>
+        <div className="image-section">
+          <img id="hiki1" src="/images/hiki1.gif" alt="hiki1" />
+          <img id="hiki2" src="/images/hiki2.gif" alt="hiki2" />
+          <img id="hiki3" src="/images/hiki3.gif" alt="hiki3" />
+          <img id="hiki4" src="/images/hiki4.gif" alt="hiki4" />
+        </div>
+        <p>The final UI design</p>
+        <div className="process-box">
+          <div className="process-section-small">
+            <h2>My experience</h2>
+          </div>
+          <div className="process-section-large">
+            <p>
+              When entering this project there were several aspects to bear in
+              mind. For example the adolescents were not able to carry out any
+              user tests since it could cause them a stress that could conflict
+              with their rehabilitation. This made the design process a bit
+              different and it was even more importent for us to perceptive all
+              possible information.
+              <br />
+              <br />
+              We also got valuable tips from our mentor Madeleine Blusi when
+              designing for users like this. We got understanding in how
+              difficult and stressfull it can be to make decisions for the user,
+              therefore it was important to have an option "maybe” included in
+              our system. How green color can give a calm impression because it
+              indicates that you have done something right is also something we
+              got to learn. What I especially learned from this was how much
+              data that is needed to create a functional artificial network.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
   };
 
   const mash = {
     cover: { color: "#f9b002", img: "/images/mash1.png" },
-    subColor: "#FFFBF2",
     processInfo: false,
+    process: true,
     processes: [
       {
         steps: {
@@ -335,9 +608,10 @@ export const getCoverContent = id => {
           <h1 className="h1-project">MASH - Course reviewing application</h1>
           <h2 className="h2-project">Apr 2018 - Jun 2018 | Umeå, Sweden</h2>
           <p>
-            In a short school project me and three other students come up with
-            an idea of an application where people can reviewing courses and
-            also read other peoples reviews. <br />
+            In a school project me and three other students come up with an idea
+            of a social platform where students can write reviews and discuss
+            courses at Umeå University.
+            <br />
             <br /> The aim was to provide a solution that will make it easier to
             choose what courses to read and also to prepare and engage students.{" "}
             <br />
@@ -424,9 +698,9 @@ export const getCoverContent = id => {
   };
 
   const queueU = {
-    cover: { color: "#fd668a", img: "/images/quPhone.png" },
-    subColor: "#FFF7F9",
+    cover: { color: "#fd668a", img: "/images/qu.png" },
     processInfo: true,
+    process: true,
     processes: [
       {
         steps: {
@@ -466,8 +740,9 @@ export const getCoverContent = id => {
           <h2 className="h2-project">Sep 2018 - Dec 2018 | Umeå, Sweden</h2>
           <p>
             Me and two other students decided to make an application for people
-            who like to share and listen to music together. Where people can
-            queue songs to a playlist created by a host and also have the
+            who like to share and listen to music together. Where people can,
+            through an application, connect to a Spotify account, join or create
+            a party and queue songs to a playlist. They will also have the
             opportunity to spice up the party and add some challenges to friends
             in between the songs.
             <br />
@@ -494,7 +769,7 @@ export const getCoverContent = id => {
           </div>
           <div className="process-section-large">
             <p>
-              Everyone in the group, made a so-called expert evaluation to
+              Everyone in the group made a so-called expert evaluation to
               identify competitors and their weaknesses/strengths. The purpose
               of this was to learn from others to provide a good foundation for
               the group's own idea.
@@ -555,7 +830,7 @@ export const getCoverContent = id => {
           <div className="process-section-large">
             <p>
               From there, we started with the Mid-Fi prototypes. We created
-              mockups in Sketch and made them interactable to be able to perform
+              mockups in Sketch and made them intractable to be able to perform
               Guerrilla testing. The subjects were asked to perform short tasks
               on the application while we observed them.
             </p>
@@ -575,9 +850,9 @@ export const getCoverContent = id => {
           </div>
           <div className="process-section-large">
             <p>
-              From the Guerrilla testing, we understood we needed motion design
-              in some parts of the application to get the users attention. We
-              created the motion design in Principle.
+              The results from the Guerrilla testing told that we needed motion
+              design in some parts of the application to get the users
+              attention. We created the motion design in Principle.
             </p>
           </div>
         </div>
@@ -602,7 +877,7 @@ export const getCoverContent = id => {
             <p>
               It was important that the application communicated with the users
               in a friendly- and informative way. Hence, the microcopy of the
-              application was overlooked. Here are one example:
+              application was overlooked. Here is one example:
               <br />
               <br />
               If the user tries to quit a party a sign will pop up saying ”Are
@@ -636,7 +911,10 @@ export const getCoverContent = id => {
           <img id="hosting" src="/images/hosting.gif" alt="hosting" />
           <img id="joining" src="/images/joining.gif" alt="joining" />
         </div>
-        <p>Final UI Design. Hosting to the left and joining to the right.</p>
+        <p>
+          Final UI Design. Hosting a party to the left and joining a party to
+          the right.
+        </p>
       </div>
     )
   };
@@ -645,7 +923,8 @@ export const getCoverContent = id => {
     accuratePlayer,
     exchangeSate,
     mash,
-    queueU
+    queueU,
+    hikikomori
   };
   return content[id];
 };

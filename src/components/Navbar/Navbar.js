@@ -4,22 +4,24 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <nav className="navigation">
-      <NavLink className="p-navigation" exact to="/">
-        HANNA ANDERSSON
-      </NavLink>
-      <div className="link-container">
-        <NavLink exact className="nav-link" to="/">
-          WORK
+    <div className="navigation">
+      <nav className="navigation-container">
+        <NavLink className="p-navigation" exact to="/">
+          HANNA ANDERSSON
         </NavLink>
-        <NavLink className="nav-link" to="/About">
-          ME
-        </NavLink>
-        <NavLink className="nav-link" to="/Resume">
-          RESUME
-        </NavLink>
-      </div>
-    </nav>
+        <div className="link-container">
+          <NavLink exact className="nav-link" to="/">
+            Work
+          </NavLink>
+          <NavLink className="nav-link" to="/About">
+            Me
+          </NavLink>
+          <NavLink className="nav-link" to="/Resume">
+            Resume
+          </NavLink>
+        </div>
+      </nav>
+    </div>
   );
 };
 

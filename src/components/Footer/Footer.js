@@ -10,12 +10,17 @@ const Footer = () => {
       >
         Mail
       </a>
-      <a className="a-footer" href="https://github.com/hannaandersson1">
+      <a
+        className="a-footer"
+        href="https://github.com/hannaandersson1"
+        target="_blank"
+      >
         GitHub
       </a>
       <a
         className="a-footer"
         href="https://www.linkedin.com/in/andersson-hanna/"
+        target="_blank"
       >
         LinkedIn
       </a>

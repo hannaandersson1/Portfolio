@@ -4,12 +4,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 80px;
   .intro-section {
     display: flex;
     justify-content: center;
     width: 90%;
+    max-width: 1400px;
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: 80px 0;
 
     .intro-section-left {
       box-sizing: border-box;
@@ -21,7 +23,6 @@
       @media screen and (max-width: 760px) {
         width: 100%;
         padding: 50px 0;
-        text-align: center;
         .h1-project {
           font-size: 22px;
         }
@@ -60,15 +61,16 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
-    background-color: #efefef;
+    background-color: #f6f8ff;
     .process {
       width: 90%;
+      max-width: 1400px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 50px 0 100px 0;
+      margin: 30px 0 50px 0;
       .process-step {
         margin: 25px;
         width: 150px;
@@ -85,6 +87,7 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
+    max-width: 1400px;
     margin-top: 50px;
 
     .process-box-self {
@@ -97,7 +100,6 @@
         padding: 40px 0 20px 0;
       }
       @media screen and (max-width: 760px) {
-        justify-content: center;
         width: 100%;
       }
     }
@@ -114,7 +116,6 @@
         @media screen and (max-width: 760px) {
           padding: 0;
           width: 100%;
-          text-align: center;
         }
       }
       .process-section-small {
@@ -128,7 +129,6 @@
         @media screen and (max-width: 760px) {
           padding-top: 40px;
           width: 100%;
-          text-align: center;
         }
       }
       @media screen and (max-width: 760px) {
@@ -241,20 +241,57 @@
         &#mashResult4 {
           height: 450px;
         }
+        //Excange
+        &#postit1 {
+          width: 230px;
+        }
+        &#postit2 {
+          width: 230px;
+        }
+        &#postit3 {
+          width: 230px;
+        }
+        &#postit4 {
+          width: 230px;
+        }
+        &#postit5 {
+          width: 230px;
+        }
+        &#postit6 {
+          width: 230px;
+        }
+        //hikikomori
+        &#hiki1 {
+          width: 200px;
+        }
+        &#hiki2 {
+          width: 200px;
+        }
+        &#hiki3 {
+          width: 200px;
+        }
+        &#hiki4 {
+          width: 200px;
+        }
       }
     }
   }
   #btn-toggle-process {
-    width: 150px;
-    height: 50px;
+    width: 140px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $base-color-text;
+    border: solid 2px $base-color-text;
     border-radius: 25px;
-    margin-top: 100px;
+    margin-top: 80px;
     cursor: pointer;
     font-weight: $bold;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
 
     @media screen and (max-width: 760px) {
       margin: 80px 0 40px 0;

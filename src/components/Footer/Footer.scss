@@ -5,7 +5,10 @@
   justify-content: flex-end;
   width: 90%;
   .a-footer {
-    margin: 80px 60px;
+    margin: 80px 50px;
+    &:hover {
+      color: $base-color-text;
+    }
     @media screen and (max-width: 756px) {
       margin: 60px 30px;
     }

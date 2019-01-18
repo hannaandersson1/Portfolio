@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import "./About.scss";
+import { animateScroll as scroll } from "react-scroll";
 
 class About extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  componentDidMount = () => {
+    scroll.scrollToTop({
+      duration: 0
+    });
+  };
+
   render() {
     return (
       <div className="about">

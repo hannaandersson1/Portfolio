@@ -38,6 +38,9 @@
         padding: 40px 0 40px 80px;
         #me {
           width: 200px;
+          border-radius: 50%;
+          @media screen and (max-width: 760px) {
+          }
         }
         @media screen and (max-width: 880px) {
           padding: 20px 0;

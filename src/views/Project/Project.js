@@ -17,6 +17,7 @@ class Project extends Component {
     scroll.scrollToTop({
       duration: 0
     });
+
     const content = getCoverContent(this.props.match.params.id);
     if (!content.processInfo) {
       this.setState({

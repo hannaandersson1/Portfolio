@@ -1,15 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ProjectCover.scss";
 
-class ProjectCover extends Component {
-  state = {};
-  render() {
-    return (
-      <div className="project-cover">
-        <img className="cover-img" alt="CoverImage" src={this.props.img} />
-      </div>
-    );
-  }
-}
+const ProjectCover = ({ img }) => {
+  return (
+    <div className="project-cover">
+      <img className="cover-img" alt="CoverImage" src={img} />
+    </div>
+  );
+};
 
 export default ProjectCover;

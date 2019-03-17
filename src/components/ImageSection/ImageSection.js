@@ -17,7 +17,7 @@ const ImageSection = () => {
             UX/UI Designer & Front End Developer
           </p>
           <p>
-            I was a part of a team that designed and build a website for
+            I was a part of a team that designed and built a website for
             exchange studies. The aim was to encourage students to study abroad
             and to simplify the process.
           </p>
@@ -60,7 +60,7 @@ const ImageSection = () => {
           <h2 className="h2-hover-project">Consultant at Accurate Player</h2>
           <p className="p-hover-project">UX Designer, Frontend Developer</p>
           <p>
-            I did the preparation work to a website for the product Accurate
+            I did the preparation work for a website for the product Accurate
             player. The work consisted of, researching, sketching, testing and
             developing.
           </p>
@@ -77,7 +77,7 @@ const ImageSection = () => {
           </h2>
           <p className="p-hover-project">UX/UI Designer, Frontend Developer</p>
           <p>
-            Me and three other students come up with an idea of an application
+            Me and three other students came up with an idea of an application
             where people can write reviews about courses at the University.
           </p>
           <Link className="button-myWork" to="/project/mash">
